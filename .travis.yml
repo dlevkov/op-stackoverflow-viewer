@@ -16,6 +16,7 @@ cache:
 
 before_script:
   - npm install -g @angular/cli
+  - npm install --save terser@3.16.1
 
 script:
   - ng lint
