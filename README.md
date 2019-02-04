@@ -2,26 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+OP Stackoverflow navigator
+Build an Angular application that will get an input from the user and search by tag in stackoverflow service.
+The page will be divided to 3 sections.
 
-## Code scaffolding
+1. Search bar – the text input from the user to be searched by.
+2. Questions list view – display the questions that came up from searching by the input from the search bar.
+   Each question will be represented by its title.
+3. Question page view – by clicking on question title in the question list the question viewer will display the view count, score and link to the answer.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![task](./src/assets/task.png)
+Stackoverflow API:
 
-## Build
+```
+GET: https://api.stackexchange.com/2.2/tags/${tag}/faq?site=stackoverflow
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+When building your app take note building a modular app
