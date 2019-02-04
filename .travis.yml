@@ -26,7 +26,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $git_token
-  local_dir: dist/op-stackoverflow-viewer
+  local_dir: dist/stack-overflow-word-search
 
 notifications:
   email:
