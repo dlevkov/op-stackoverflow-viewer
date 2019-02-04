@@ -1,3 +1,14 @@
-<p>
-  question-page-view works!
-</p>
+<mat-card *ngIf="(selectedItem$ | async) as item; else loading" class="card-container">
+  <mat-card-header>
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <mat-card-subtitle><span>View Count:</span>{{ item.viewCount }}</mat-card-subtitle>
+    <mat-card-subtitle><span>Score:</span>{{ item.score }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p><span>Link:</span>{{ item.link }}</p>
+  </mat-card-content>
+</mat-card>
+
+<ng-template #loading>
+  Please start searching...
+</ng-template>

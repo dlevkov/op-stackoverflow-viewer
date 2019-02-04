@@ -7,6 +7,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { QuestionsListViewComponent } from './components/questions-list-view/questions-list-view.component';
 import { QuestionPageViewComponent } from './components/question-page-view/question-page-view.component';
 import { MaterialModule } from './modules/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MaterialModule } from './modules/material.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

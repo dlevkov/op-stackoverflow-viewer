@@ -1,6 +1,7 @@
 import { DataModel, DataModelItem } from './data-model';
 
 export class ViewModel {
+  public id: number;
   public title: string;
   public viewCount: number;
   public score: number;
@@ -11,5 +12,6 @@ export class ViewModel {
     this.link = dmi.link;
     this.score = dmi.score;
     this.viewCount = dmi.view_count;
+    this.id = dmi.question_id;
   }
 }

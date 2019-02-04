@@ -5,6 +5,7 @@ import {
   MatButtonModule,
   MatInputModule,
   MatIconModule,
+  MatDividerModule,
 } from '@angular/material';
 const modules = [
   CommonModule,
@@ -12,6 +13,7 @@ const modules = [
   MatButtonModule,
   MatInputModule,
   MatIconModule,
+  MatDividerModule,
 ];
 @NgModule({
   imports: [...modules],
