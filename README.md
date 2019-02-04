@@ -1,4 +1,8 @@
-# StackOverflowWordSearch
+# StackOverflowWordSearch [![Build Status](https://travis-ci.com/dlevkov/op-stackoverflow-viewer.svg?branch=master)](https://travis-ci.com/dlevkov/op-stackoverflow-viewer)
+
+## Demo application avaliable [here](https://dlevkov.github.io/op-stackoverflow-viewer/)
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
