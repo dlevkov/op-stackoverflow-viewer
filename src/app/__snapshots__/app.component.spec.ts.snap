@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should render title in a h1 tag 1`] = `
+<app-root
+  title={[Function String]}
+>
+  <mat-card
+    class="overall-container"
+  >
+    <mat-card-header>
+      <mat-card-title>
+        OP Stackoverflow viewer
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-search-bar />
+      <div
+        class="left-right-divider"
+      >
+        <app-questions-list-view
+          class="left"
+        />
+        <app-question-page-view
+          class="right"
+        />
+      </div>
+    </mat-card-content>
+  </mat-card>
+</app-root>
+`;
